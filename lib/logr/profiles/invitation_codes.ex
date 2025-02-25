@@ -19,5 +19,7 @@ defmodule Logr.Profiles.InvitationCodes do
     |> validate_required([:code])
     |> unique_constraint(:used_by_id)
     |> unique_constraint(:code)
+    |> validate_length(:code, is: 16, count: :bytes)
+    |> validate_format(:code, ~r/[a-z]{12}\d{4}/)
   end
 end
