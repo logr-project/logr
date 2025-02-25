@@ -20,5 +20,8 @@ defmodule Logr.Profiles.Profile do
     |> validate_required([:handle, :name, :story])
     |> unique_constraint(:user_id)
     |> unique_constraint(:handle)
+    |> validate_length(:handle, min: 4, max: 15, count: :bytes)
+    |> validate_length(:name, min: 4, max: 25)
+    |> validate_length(:story, max: 4096, count: :bytes)
   end
 end
