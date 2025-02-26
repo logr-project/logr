@@ -19,6 +19,6 @@ defmodule Logr.Repo.Migrations.CreateInvitationCodes do
     create unique_index(:invitation_codes, [:used_by_id])
     create unique_index(:invitation_codes, [:code])
     create index(:invitation_codes, [:profile_id])
-    create constraint(:invitation_codes, :code_length, check: "OCTET_LENGTH == 16")
+    create constraint(:invitation_codes, :code_length, check: "OCTET_LENGTH(code) = 16")
   end
 end
