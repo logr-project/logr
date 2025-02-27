@@ -20,5 +20,8 @@ defmodule Logr.Spaces.Space do
     |> cast(attrs, [:handle, :name, :description, :discoverable])
     |> validate_required([:handle, :name, :description, :discoverable])
     |> unique_constraint(:handle)
+    |> validate_length(:handle, min: 4, max: 15, count: :bytes)
+    |> validate_length(:name, min: 4, max: 25)
+    |> validate_length(:description, max: 4096, count: :bytes)
   end
 end
