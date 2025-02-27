@@ -43,7 +43,7 @@ PostgreSQL is our database of choice.
 `sudo apt install postgresql`
 
 #### C Build Tools
-To be able to use Argon2 as our password-hashing algorithm, the `phx.gen.auth` command uses `argon2_elixir` package which is based on `comeonin` package that needs C build tools to be available.
+To be able to use Argon2 as our password-hashing algorithm, the `phx.gen.auth` command uses `argon2_elixir` package, which is based on `comeonin` package that needs C build tools to be available.
 
 ##### Ubuntu LTS
 
@@ -54,8 +54,11 @@ To be able to use Argon2 as our password-hashing algorithm, the `phx.gen.auth` c
 
 #### `inotify-tools` (Linux)
 
-In order to make the Phoenix live-reload and file-system watcher work, we need the `inotify-tools` package:
+To make the Phoenix live-reload feature work, we need a file-system watcher, so we use the `inotify-tools` package:
 
 ##### Ubuntu LTS
 
 `sudo apt install inotify-tools`
+
+> [!NOTE]
+> You can see the [`inotify-tools` wiki](https://github.com/inotify-tools/inotify-tools/wiki) for more information.
