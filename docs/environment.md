@@ -3,6 +3,7 @@
 ## Our Development Environment
 - Ubuntu LTS (WSL)
 - Visual Studio Code
+    - ElixirLS
 
 ## How to setup
 
