@@ -21,5 +21,9 @@ defmodule Logr.Logs.Log do
     log
     |> cast(attrs, [:title, :slug, :quick_view, :content, :logged_at, :discoverable])
     |> validate_required([:title, :slug, :quick_view, :content, :logged_at, :discoverable])
+    |> unique_constraint([:space_id, :slug])
+    |> validate_length(:slug, min: 1, count: :bytes)
+    |> validate_length(:quick_view, min: 3, max: 4096, count: :bytes)
+    |> validate_length(:content, min: 3, max: 61440, count: :bytes)
   end
 end
