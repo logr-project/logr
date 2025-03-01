@@ -12,6 +12,7 @@
 - PostgreSQL
 - C Build Tools (Needed for Argon2)
     - `argon2_elixir` and `comeonin` package
+- Node.js LTS
 
 ### Installing
 
@@ -62,3 +63,28 @@ To make the Phoenix live-reload feature work, we need a file-system watcher, so 
 
 > [!NOTE]
 > You can see the [`inotify-tools` wiki](https://github.com/inotify-tools/inotify-tools/wiki) for more information.
+
+#### Node.js LTS
+
+We also need Node.js, to have `npx` (e.g. for the `@tailwindcss/upgrade` tool) or manage packages with `npm`.
+
+##### Ubuntu LTS
+
+To install a recent version of Node.js (e.g. the `@tailwindcss/upgrade` tool needs Node.js 20+) we need to use a node version manager tool. We use `fnm` for our environment.
+
+`sudo apt install curl unzip`
+
+`curl -o- https://fnm.vercel.app/install | bash`
+
+`fnm install 22`
+
+To verify the Node.js version:
+
+`node -v` 
+
+To verify the `npm` version:
+
+`npm -v`
+
+> [!NOTE]
+> For more information on available install methods, see [Node.js download page](https://nodejs.org/en/download) or [`fnm` installation guide](https://github.com/Schniz/fnm#installation).
