@@ -66,11 +66,11 @@ To make the Phoenix live-reload feature work, we need a file-system watcher, so 
 
 #### Node.js LTS
 
-We also need Node.js, to have `npx` (e.g. for the `@tailwindcss/upgrade` tool) or manage packages with `npm`.
+We also need Node.js, to have `npx` (e.g., for the `@tailwindcss/upgrade` tool) or manage packages with `npm`.
 
 ##### Ubuntu LTS
 
-To install a recent version of Node.js (e.g. the `@tailwindcss/upgrade` tool needs Node.js 20+) we need to use a node version manager tool. We use `fnm` for our environment.
+To install a recent version of Node.js (e.g., the `@tailwindcss/upgrade` tool needs Node.js 20+), we need a node version manager tool. We use `fnm` for our environment.
 
 `sudo apt install curl unzip`
 
@@ -87,4 +87,4 @@ To verify the `npm` version:
 `npm -v`
 
 > [!NOTE]
-> For more information on available install methods, see [Node.js download page](https://nodejs.org/en/download) or [`fnm` installation guide](https://github.com/Schniz/fnm#installation).
+> For more information on available install methods, see the [Node.js download page](https://nodejs.org/en/download) or the [`fnm` installation guide](https://github.com/Schniz/fnm#installation).
