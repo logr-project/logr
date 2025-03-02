@@ -46,7 +46,6 @@ config :tailwind,
   version: "4.0.9",
   logr: [
     args: ~w(
-      --config=assets/tailwind.config.js
       --input=assets/css/app.css
       --output=priv/static/assets/app.css
     ),
