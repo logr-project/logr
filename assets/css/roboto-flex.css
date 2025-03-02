@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "Roboto Flex";
+    src: local("Roboto Flex"), url("/fonts/roboto-flex/RobotoFlex-VariableFont_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: block;
+}

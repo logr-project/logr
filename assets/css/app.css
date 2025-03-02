@@ -3,6 +3,9 @@
 
 @import "tailwindcss";
 
+@import "./roboto-flex.css";
+@import "./noto-sans-arabic";
+
 @plugin "@tailwindcss/forms";
 @plugin "./tailwind_heroicons.js";
 
@@ -11,7 +14,10 @@
 @variant phx-change-loading ([".phx-change-loading&", ".phx-change-loading &"]);
 
 @theme {
-    --color-brand: oklch(66.64% 0.2202 37.57)
+    --color-brand: oklch(66.64% 0.2202 37.57);
+    --font-roboto-flex: "Roboto Flex";
+    --font-noto-sans-arabic: "Noto Sans Arabic";
+    --font-logr: var(--font-roboto-flex), var(--font-noto-sans-arabic);
 }
 
 /*
