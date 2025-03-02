@@ -73,11 +73,11 @@ The above is all we need to get the Phoenix live-reload to work, but there is an
 
 #### Node.js LTS
 
-We also need Node.js, to have `npx` (e.g., for the `@tailwindcss/upgrade` tool) or manage packages with `npm`.
+We also need Node.js, to have `npx` or manage packages with `npm`.
 
 ##### Ubuntu LTS
 
-To install a recent version of Node.js (e.g., the `@tailwindcss/upgrade` tool needs Node.js 20+), we need a node version manager tool. We use `fnm` for our environment.
+To install a recent version of Node.js, we need a node version manager tool. We use `fnm` for our environment.
 
 `sudo apt install curl unzip`
 
