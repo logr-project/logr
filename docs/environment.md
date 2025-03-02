@@ -61,6 +61,13 @@ To make the Phoenix live-reload feature work, we need a file-system watcher, so 
 
 `sudo apt install inotify-tools`
 
+The above is all we need to get the Phoenix live-reload to work, but there is an error saying `sh: 1: watchman: not found` which can be fixed with:
+
+`sudo apt install watchman`
+
+> [!IMPORTANT]
+> In case you are working with WSL, make sure that your project files are located somewhere on the Linux file system; otherwise the live-reload feature won't work.
+
 > [!NOTE]
 > You can see the [`inotify-tools` wiki](https://github.com/inotify-tools/inotify-tools/wiki) for more information.
 
